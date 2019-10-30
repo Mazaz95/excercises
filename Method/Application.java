@@ -3,7 +3,7 @@ import java.util.Calendar;
 public class Application{
 	
 	//this method find the smallest number between three numbers
-	public static void suchen(){
+	public static void findingTheSmallestNumber(){
 		System.out.println("please enter three numbers: ");
 		Scanner scann=new Scanner(System.in);
 		int n1=scann.nextInt();
@@ -21,7 +21,7 @@ public class Application{
 	}
 	
 	//this method calculate the avg of the numbers
-	public static void avg(){
+	public static void averageOfNumbers(){
 		System.out.println("please enter three numbers: ");
 		Scanner scann=new Scanner(System.in);
 		int m1=scann.nextInt();
@@ -34,7 +34,7 @@ public class Application{
 	}
 	
 	//this method compute the sum of the digits in an integer
-	public static void digit(){
+	public static void sumOfDigitInInteger(){
 		System.out.println("please enter a number: ");
 		Scanner scann=new Scanner(System.in);
 		int x=scann.nextInt();
@@ -47,7 +47,7 @@ public class Application{
 	}
 	
 	//this method display the first 50 pentagonal numbers
-	public static void pentagonal(){
+	public static void displayPentagonalsNumbers(){
 		System.out.println("These are the first 50 Pentagonal numbers: ");
 		for(int i=0;i<=50;i++)
 			System.out.print(" " +(i*(3*i-1))/2 +" ");
@@ -56,7 +56,7 @@ public class Application{
 	
     /* this method check whether a year is a leap year or not
        a normal year has 356 days.A leap year has 366 days */	
-	public static void leap(){
+	public static void leapYear(){
 		System.out.println();
 		System.out.println("please enter a year : ");
 		Scanner scann=new Scanner(System.in);
@@ -74,7 +74,7 @@ public class Application{
 	}
 	
 	//this method takes a number n  to displays an n-by-n matrix
-	public static void matrix(){
+	public static void displayNumberAsMatrix(){
 		System.out.println("which number do you want to display it as a matrix? ");
 		Scanner scann=new Scanner(System.in);
 		int a=scann.nextInt();
@@ -89,7 +89,7 @@ public class Application{
 	}
 	
 	//this method calculate the area of a triangle
-	public static void triangle(){
+	public static void areaOfTriangle(){
 		System.out.println();
 		System.out.println("please enter the base b : ");
 		Scanner scann=new Scanner(System.in);
@@ -103,7 +103,7 @@ public class Application{
 	}
 	
 	//this method create the area of a pentagon
-	public static void pentagon(){
+	public static void areaOfPentagon(){
 		System.out.println("please enter the number of sides: ");
 		Scanner scann=new Scanner(System.in);
 		int s=scann.nextInt();
@@ -115,7 +115,7 @@ public class Application{
 	}
 		
 	//this method display the current date and time
-	public static void time(){
+	public static void currentDateAndTime(){
 		System.out.println();
 		
 		Calendar c=Calendar.getInstance();
@@ -124,7 +124,7 @@ public class Application{
 	}
 	
 	//this method display the middle character of a string
-	public static void middle(){
+	public static void displayMiddleCharacter(){
 		System.out.println();
 		System.out.println("please enter a string(one word) to find the middle character: ");
 		Scanner scann=new Scanner(System.in);
@@ -144,7 +144,7 @@ public class Application{
 	}
 			
 	//this method count all vowels in a string
-    public static void vowel(){
+    public static void countVowelInString(){
         System.out.println("please enter a string to count the vowels: ");
         Scanner scann=new Scanner(System.in);
         String s=scann.nextLine();
@@ -160,7 +160,7 @@ public class Application{
     }
 	
 	//this method count all words in a string
-	public static void word(){
+	public static void countWordsInString(){
 		System.out.println("please enter a string to count the words: ");
 		Scanner scann=new Scanner(System.in);
 		String s=scann.nextLine();
@@ -180,18 +180,18 @@ public class Application{
 			
     //main method 
 	public static void main(String[]args){
-		suchen();
-		avg();
-		digit();
-		pentagonal();
-		leap();
-		matrix();
-		triangle();
-		pentagon();
-		time();
-		middle();
-		vowel();
-		word();
+		findingTheSmallestNumber();
+		averageOfNumbers();
+		sumOfDigitInInteger();
+		displayPentagonalsNumbers();
+		leapYear();
+		displayNumberAsMatrix();
+		areaOfTriangle();
+		areaOfPentagon();
+		currentDateAndTime();
+		displayMiddleCharacter();
+		countVowelInString();
+		countWordsInString();
 	}
 }
 		 

@@ -1,7 +1,7 @@
-public class Application_Test{
+public class ApplicationTest{
 	
 	//this method find the smallest number between three numbers
-	public static void suchen(){
+	public static void findingTheSmallestNumber(){
 		int n1=25;
 		int n2=55;
 		int n3=13;
@@ -17,7 +17,7 @@ public class Application_Test{
 	}
 	
 	//this method calculate the avg of the numbers
-	public static void avg(){
+	public static void averageOfNumbers(){
 		int m1=25;
 		int m2=45;
 		int m3=65;
@@ -28,7 +28,7 @@ public class Application_Test{
 	}
 	
 	//this method compute the sum of the digits in an integer
-	public static void digit(){
+	public static void sumOfDigitInInteger(){
 		int x=251;
 		int y1=x/100%10;
 		int y2=x/10%10;
@@ -40,7 +40,7 @@ public class Application_Test{
 	
 	 /* this method check whether a year is a leap year or not
        a normal year has 356 days.A leap year has 366 days */	
-	public static void leap(){
+	public static void leapYear(){
 		int y=2019;
 		int x1=y/1000&10;
 	    int x2=y/100%10;
@@ -55,7 +55,7 @@ public class Application_Test{
 	}
 	
 	//this method takes a number n  to displays an n-by-n matrix
-	public static void matrix(){
+	public static void displayNumberAsMatrix(){
 		int [][]z=new int [10][10];
 		for(int i=0;i<10;i++){
 			for(int j=0;j<10;j++){
@@ -67,7 +67,7 @@ public class Application_Test{
 	}
 	
 	//this method calculate the area of a triangle
-	public static void triangle(){
+	public static void areaOfTriangle(){
 		int b=10;
 		int h=3;
 		int area=(b*h)/2;
@@ -76,7 +76,7 @@ public class Application_Test{
 	}
 	
 	//this method create the area of a pentagon
-	public static void pentagon(){
+	public static void areaOfPentagon(){
 		int s=5;
 		double a=6;
 		double area=(s * a * a) / (4 * Math.tan(Math.PI/s));
@@ -85,7 +85,7 @@ public class Application_Test{
 	}
 	
 	//this method display the middle character of a string
-	public static void middle(){
+	public static void displayMiddleCharacter(){
 		String s="Java";
 		int pos;
 		int length;
@@ -103,7 +103,7 @@ public class Application_Test{
 	
 			
 	//this method count all vowels in a string
-    public static void vowel(){
+    public static void countVowelInString(){
 		String s="w3resource";
 		int count=0;
         for(int i=0;i<s.length();i++){
@@ -117,7 +117,7 @@ public class Application_Test{
     }
 	
 		//this method count all words in a string
-	public static void word(){
+	public static void countWordsInString(){
 		String s="The quick brown fox jumps over the lazy dog.";
 			int count =0;
 		if(!(" ".equals(s.substring(s.length()-1)))){
@@ -133,16 +133,16 @@ public class Application_Test{
 	}
 	
 	public static void main(String[]args){
-		suchen();
-		avg();
-		digit();
-		leap();
-		matrix();
-		triangle();
-		pentagon();
-		middle();
-		vowel();
-		word();
+		findingTheSmallestNumber();
+		averageOfNumbers();
+		sumOfDigitInInteger();
+		leapYear();
+		displayNumberAsMatrix();
+		areaOfTriangle();
+		areaOfPentagon();
+		displayMiddleCharacter();
+		countVowelInString();
+		countWordsInString();
 	}
   
 }
