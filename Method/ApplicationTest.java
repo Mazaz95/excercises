@@ -1,7 +1,7 @@
 public class ApplicationTest{
 	
 	//this method find the smallest number between three numbers
-	public static void findingTheSmallestNumber(){
+	public static void findTheSmallestNumber(){
 		int n1=25;
 		int n2=55;
 		int n3=13;
@@ -133,7 +133,7 @@ public class ApplicationTest{
 	}
 	
 	public static void main(String[]args){
-		findingTheSmallestNumber();
+		findTheSmallestNumber();
 		averageOfNumbers();
 		sumOfDigitInInteger();
 		leapYear();

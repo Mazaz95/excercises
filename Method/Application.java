@@ -3,7 +3,7 @@ import java.util.Calendar;
 public class Application{
 	
 	//this method find the smallest number between three numbers
-	public static void findingTheSmallestNumber(){
+    public static void findTheSmallestNumber(){
 		System.out.println("please enter three numbers: ");
 		Scanner scann=new Scanner(System.in);
 		int n1=scann.nextInt();
@@ -180,7 +180,8 @@ public class Application{
 			
     //main method 
 	public static void main(String[]args){
-		findingTheSmallestNumber();
+		System.out.println("we are going to find the smallest number ");
+		findTheSmallestNumber();
 		averageOfNumbers();
 		sumOfDigitInInteger();
 		displayPentagonalsNumbers();
