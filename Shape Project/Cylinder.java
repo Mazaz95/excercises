@@ -110,6 +110,6 @@ public class Cylinder{
 	 * this method print all the cylinder information
 	 */
 	public String toString(){
-		return "Cylinder [ color: " +getColor() +" , filled : " +isFilled() +" , radius: " +getRadius() +", height: " +getHeight() +" , area: " +getArea() +", Face area: " +getFaceArea() +" , perimeter: " +getPerimeter();
+		return "Cylinder [ color: " +getColor() +" , filled : " +isFilled() +" , radius: " +getRadius() +", height: " +getHeight() +" , area: " +getArea() +", Face area: " +getFaceArea() +" , perimeter: " +getPerimeter() +" ]";
 	}
 }

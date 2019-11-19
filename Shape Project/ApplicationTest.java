@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 public class ApplicationTest{
 	
 	/**
@@ -6,9 +8,11 @@ public class ApplicationTest{
      */
 	 public static void main(String[]arg){
 		Circle circle=new Circle(7.5,"red",true);
-		System.out.println(circle.getArea());
+		double expectedArea = BigDecimal.valueOf(176.715).setScale(3, RoundingMode.HALF_UP).doubleValue();
+		double resultedArea = BigDecimal.valueOf(circle.getArea()).setScale(3, RoundingMode.HALF_UP).doubleValue();
+		String areaResult = String.format("Expected area is %s, and got the value %s, and the result is %s", expectedArea, resultedArea, expectedArea == resultedArea);
 		System.out.println(circle.getPerimeter());
-		System.out.println(circle.toString());
+		
 		System.out.println();
 		
 		Circle kreis=new Circle(5.3);
@@ -17,15 +21,11 @@ public class ApplicationTest{
 		System.out.println(kreis.toString());
 		System.out.println();
 		
-		Square square=new Square(5);
-		System.out.println(square.getArea());
-		System.out.println(square.getPerimeter());
-		System.out.println(square.toString());
-		System.out.println();
+		
 		
 		Square quadrat=new Square(null,false,6);
-		System.out.println(quadrat.getArea());
-		System.out.println(quadrat.getPerimeter());
+		System.out.println(quadrat.area());
+		System.out.println(quadrat.perimeter());
 		System.out.println(quadrat.toString());
 		System.out.println();
 		

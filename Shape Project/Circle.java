@@ -84,7 +84,7 @@ public class Circle{
 	 * this method print the circle information
 	 */
 	public String toString(){
-		return "Circle [ color: " +getColor() +" , filled : " +isFilled() +" , radius: " +getRadius() +" , area: " +getArea() +" , perimeter: " +getPerimeter();
+	return "Circle [ color: " +getColor() +" , filled : " +isFilled() +" , radius: " +getRadius() +" , area: " +getArea() +" , perimeter: " +getPerimeter() +" ]";
 	}
 }
 	

@@ -5,14 +5,13 @@ public class Customer{
 	private String userName;
 	private String firstName;
 	private String lastName;
-	private List<Invoice> invoice = new ArrayList<>();
-	Customer customer;
-	double amount;
+	private List<Invoice> invoices = new ArrayList<>();
+	
 	
 	public Customer(String userName,String firstName,String lastName){
-		userName=userName;
-		firstName=firstName;
-		lastName=lastName;
+		this.userName=userName;
+		this.firstName=firstName;
+		this.lastName=lastName;
 	}
 	
 	public String getUserName(){
@@ -40,13 +39,11 @@ public class Customer{
 	}
 	
 	public Invoice addInvoice(){
-	Invoice invToAdd = new Invoice(customer,amount);
-    invoice.add(invToAdd); 
+	//Invoice invToAdd = new Invoice(customer,amount);
+    invoices.add(invoice); 
 	}
 	
 	public double getTotalSpend(){
-		Invoice spend=new Invoice(customer, amount);
-		return (spend.getFinalAmount());
 	}
  
 		

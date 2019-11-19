@@ -102,6 +102,6 @@ public class Rectangle{
 	 * this method print all the cylinder information
 	 */
 	public String toString(){
-		return "Rectanglr [ color: " +getColor() +" , filled : " +isFilled() +" , width: " +getWidth() +", height: " +getHeight() +" , area: " +getArea() +" , perimeter: " +getPerimeter();
+		return "Rectanglr [ color: " +getColor() +" , filled : " +isFilled() +" , width: " +getWidth() +", height: " +getHeight() +" , area: " +getArea() +" , perimeter: " +getPerimeter() +" ]";
 	}
 }

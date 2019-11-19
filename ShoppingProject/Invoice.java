@@ -8,8 +8,8 @@ public class Invoice{
 	private double discount;
 	
 	public Invoice(Customer customer,double amount){
-		customer=customer;
-		amount=amount;
+		this.customer=customer;
+		this.amount=amount;
 		Random x=new Random();
 		id=x.nextInt();
 		
