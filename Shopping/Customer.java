@@ -1,11 +1,11 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 public class Customer{
 	
 	private String userName;
 	private String firstName;
 	private String lastName;
-	Set <Invoice> invoices=new HashSet <Invoice>();
+	ArrayList <Invoice> invoices=new ArrayList <Invoice>();
 	
 	//constructor of the class with three parameter
 	public Customer(String userName,String firstName,String lastName){
@@ -24,11 +24,12 @@ public class Customer{
 		return this.userName;
 	}
 	
-	//this setter method has no return
+	//this setter method has no return 
 	public void setFirstName(String firstName){
 		this.firstName=firstName;
 	}
-	//this getter method return the first name
+	
+	//this getter method return the first name 
 	public String getFirstName(){
 		return this.firstName;
 	}
@@ -43,15 +44,32 @@ public class Customer{
 		return this.lastName;
 	}
 	
-	//this getter method return the full name (first and last)
+	//this getter method return the full name
 	public String getFullName(){
-		return getFirstName() +" " +getLastName();
+		return getFirstName() +" " + getLastName();
 	}
 	
 	//this method add all the invoices together
-	public void addInvoice(Invoice invoiceToAdd){
-		invoices.add(invoiceToAdd);
+	public void addInvoice(Invoice inv){
+		invoices.add(inv);
+	}
+	
+	//this method return the invoices 
+	public List <Invoice> getInvoices(){
+		return invoices;
+	}
+	
+	//this method calculate the amount of all the invoices
+	public double getTotalSpend(){
+		double sum=0;
+		for(Invoice list: invoices){
+			sum += list.getFinalAmount();
+		}
+		return sum;
 	}
 	
 }
+		
+		
+		
 	

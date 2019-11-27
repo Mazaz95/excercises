@@ -12,11 +12,12 @@ public class Invoice{
 	   Generate ID Random between 1 and 999
 	   This will generate a number between 0 and 998 and add 1 to the result which will make the range of the generated value as 1 to 999.
 	   **/
-	public Invoice(Customer customer,double amount){
+	
+	public Invoice(Customer customer, double amount){
 		this.customer=customer;
 		this.amount=amount;
 		Random rand=new Random();
-		int id =rand.nextInt(998)+1;
+		int id=rand.nextInt(998)+1;
 		this.id=id;
 	}
 	
@@ -35,18 +36,9 @@ public class Invoice{
 		return this.amount;
 	}
 	
-	//this method return the customer full name(first and last)
-	public String getCustomerFullName(){
-		return customer.getFullName();
-	}
-	
-	/**in this method we give a value as paramter to the discount
-	 * this method tell us if the customer has a discount or not
-	 **/
-	public double setDiscount(double discount){
+	//in this method we give a value as paramter to the discount
+	public void setDiscount(double discount){
 		this.discount=discount;
-		return discount;
-	      
 	}
 	
 	/**
@@ -54,15 +46,19 @@ public class Invoice{
 	   when it's zero that's meaning there isn't discount
 	   **/
 	public double getDiscount(){
-		  if (discount==0)
+		if(discount==0)
 			return 0;
-		  else 
-			return (discount*amount)/100;
+		return (amount*discount)/100;
+	}
+	
+	//this method return the customer name
+	public String getCustomerFullName(){
+		return customer.getFullName();
 	}
 	
 	// in this method we calculate the finale price
 	public double getFinalAmount(){
-		return (getAmount() - getDiscount());
+		return getAmount()-getDiscount();
 	}
 	
 }
