@@ -62,8 +62,8 @@ public class Customer{
 	//this method calculate the amount of all the invoices
 	public double getTotalSpend(){
 		double sum=0;
-		for(Invoice list: invoices){
-			sum += list.getFinalAmount();
+		for(Invoice invoice: invoices){
+			sum += invoice.getFinalAmount();
 		}
 		return sum;
 	}

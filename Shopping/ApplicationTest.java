@@ -2,6 +2,7 @@ import java.lang.StringBuilder;
 import java.math.RoundingMode;
 import java.math.BigDecimal;
 public class ApplicationTest{
+	static Customer c = new Customer("hussein@gmail.com", "Hussein", "ghrer");
 	
 	public static void main(String[]args){
 		
@@ -43,11 +44,13 @@ public class ApplicationTest{
 		test(c);
 
 	}
-	public static void test(Customer c){
+	public static void test(Customer c1){
+	
 		Invoice x=new Invoice(c,150);
 		Invoice y=new Invoice(c,257);
-		
-		int invoicesCount=c.getInvoices().size();
+		System.out.println("New total spent: " + c.getTotalSpend());
+		int invoicesCount=c1.getInvoices().size();
+		System.out.println(c.getInvoices().size());
 		System.out.println(invoicesCount);
 		
 	}
