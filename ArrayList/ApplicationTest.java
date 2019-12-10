@@ -1,0 +1,50 @@
+public class ApplicationTest{
+	
+	public static void main(String[]args){
+		
+		AddColorsToArray.addColorsToArray();
+		System.out.println();
+		MyArray.myArray();
+		System.out.println();
+		InsertElement.insertElementIntoArray();
+		System.out.println();
+		RetrieveElement.retrieveElementFromArray();
+		System.out.println();
+		UpdateElement.updateElementByAnother();
+		System.out.println();
+		RemoveElement.removeElementFromArray();
+		System.out.println();
+		SearchElement.searchElementInArray();
+		System.out.println();
+		SortElement.sortElementInArray();
+		System.out.println();
+		CopyArrayList.copyArrayIntoAnother();
+		System.out.println();
+		ShuffleElements.shuffleElementsInArray();
+		System.out.println();
+		ReverseElements.reverseElementsInArray();
+		System.out.println();
+		ExtractPortion.extractPortionOfArray();
+		System.out.println();
+		CompareLists.compareListWithAnother();
+		System.out.println();
+		SwapElements.swapElementsInArray();
+		System.out.println();
+		JoinLists.joinLists();
+		System.out.println();
+		//CloneList.cloneListToAnother();
+		//System.out.println();
+		ClearList.clearList();
+		System.out.println();
+		TestList.testEmptyArray();
+		System.out.println();
+		//TrimCapacityList.trimCapacitayOfList();
+		//System.out.println();
+		//IncreaseSizeList.increaseSizeOfList();
+		//System.out.println();
+		ReplaceElements.replaceElementsOfList();
+		System.out.println();
+		PrintElement.printElementOfList();
+		System.out.println();
+	}
+}
